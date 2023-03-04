@@ -43,7 +43,6 @@ const GlobalStyles = createGlobalStyle`
     border-radius: 0.3rem; /* rundness of the scroll thumb */
   }
 
-
 `;
 
 export default GlobalStyles;

@@ -3,6 +3,7 @@ import { Flex } from './styles/Containers.style';
 import albumCover from '../assets/smallBaloons.jpeg';
 import { playbackIcons } from '../utils/constants';
 import { MenuIcon } from './styles/Sidebar.style';
+import { StyledTrackVolumeSlide } from './styles/Button.style';
 
 const Footer = () => {
   const [playState, setPlayState] = useState(false);
@@ -79,23 +80,9 @@ const Footer = () => {
         </Flex>
       </Flex>
 
-      <Flex
-        justifyContent='flex-end'
-        alignItems='center'
-        // border='1px solid purple'
-        height='100%'
-      >
+      <Flex justifyContent='flex-end' alignItems='center' height='100%'>
         <MenuIcon>{playbackIcons.volumeMute}</MenuIcon>
-        <input
-          class='input-bar'
-          type='range'
-          name='volume'
-          id='volume'
-          min='0'
-          max='10'
-          step='1'
-          style={{ height: '.3rem' }}
-        />
+        <StyledTrackVolumeSlide type='range' min='0' max='10' step='1' />
         <MenuIcon>{playbackIcons.volumeUp}</MenuIcon>
       </Flex>
     </Flex>

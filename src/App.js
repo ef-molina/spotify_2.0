@@ -46,7 +46,7 @@ const App = () => {
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        {/* ======= If use is logged in . . . render dash feed ======= */}
+        {/* ======= If user is logged in . . . render dash feed ======= */}
         {loggedIn ? (
           <AppContainer>
             <Navbar handleReject={handleReject} />

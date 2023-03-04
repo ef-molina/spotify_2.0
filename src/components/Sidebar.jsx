@@ -8,23 +8,6 @@ import { Link, useParams } from 'react-router-dom';
 const Sidebar = () => {
   const [activeMenu, setActiveMenu] = useState('/');
 
-  // TODO:  trying to update the active menu item when user clicks the back button
-
-  // const pathName = window.location.pathname;
-  // useEffect(() => {
-  //   if (pathName) {
-  //     if (pathName != '/') {
-  //       console.log('pathname: ', pathName);
-  //       console.log('ActiveMenu: ', '/' + activeMenu);
-  //     }
-
-  //     if (pathName == '/') {
-  //       console.log('pathname: ', pathName);
-  //       console.log('ActiveMenu: ', activeMenu);
-  //     }
-  //   }
-  // }, [pathName]);
-
   const handleClick = (e) => {
     // console.log(e.target.closest('div').id);
     setActiveMenu(e.target.closest('div').id);
